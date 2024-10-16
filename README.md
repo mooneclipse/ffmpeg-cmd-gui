@@ -1,4 +1,4 @@
-[日本語](FFmpegコマンドGUIツール)
+[日本語](#FFmpegコマンドGUIツール)
 
 [English](#FFmpeg-CMD-GUI)
 
