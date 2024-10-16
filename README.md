@@ -14,6 +14,8 @@ FFmpeg cmd guiはGUIに記入したオプションでFFmpegコマンドを実行
 
 ## 使用方法
 
+![image](https://github.com/user-attachments/assets/2d9cb231-0dd1-4861-a404-3a5f4b01b52e)
+
 1. アプリケーションを起動します。
 2. 環境変数に登録していない方はffmpeg.exeのパスを設定します。
 3. 入力ファイルを選択し、必要に応じて入力オプションを指定します。
@@ -79,6 +81,8 @@ FFmpeg CMD GUI is an application that executes FFmpeg commands using options ent
 - Settings can be saved as JSON preset files, enabling reuse of the same process on different files.
 
 ## How to Use
+
+![image](https://github.com/user-attachments/assets/2d9cb231-0dd1-4861-a404-3a5f4b01b52e)
 
 1. Launch the application.
 2. If FFmpeg is not registered in your environment variables, set the path to ffmpeg.exe.
