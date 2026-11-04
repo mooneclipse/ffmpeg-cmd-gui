@@ -1,0 +1,1 @@
+{"ffmpeg_path":"","input_file_path":"","input_option":"","output_file_path":"","output_option":"-c:v libx264 -crf 23 -c:a aac -b:a 160k"}
