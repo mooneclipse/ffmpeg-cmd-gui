@@ -62,6 +62,10 @@ ERROR_PRESSED = "#8A231B"
 ERROR_DISABLED = "#E2A7A2"
 TROUGH = "#DCE3EA"
 HOVER_NEUTRAL = "#E4EAF0"
+# 副ボタンの地色。白い面の上でも「ボタンだ」と分かるよう、白より一段沈める
+# （DESIGN §9.2 は地色 SURFACE だったが、実スクリーンショットで枠が読めなかったため変更）
+BTN_BG = "#E9EEF3"
+BTN_HOVER = "#D7E0E9"
 
 CMD_BG = "#14202B"
 CMD_BORDER = "#0E1720"
@@ -381,11 +385,11 @@ def setup_style(root, px):
     st.configure("CardHint.Error.TLabel", foreground=ERROR)
     st.configure("Status.TLabel", background=BG, foreground=TEXT_SUB, font="F_STATUS")
 
-    # Button: 副 / 小
-    neutral = [("disabled", SURFACE_ALT), ("pressed", TROUGH), ("active", HOVER_NEUTRAL)]
-    st.configure("TButton", background=SURFACE, foreground=TEXT, font="F_BODY",
+    # Button: 副 / 小（白い面でもボタンと分かる地色＋枠にする）
+    neutral = [("disabled", SURFACE_ALT), ("pressed", TROUGH), ("active", BTN_HOVER)]
+    st.configure("TButton", background=BTN_BG, foreground=TEXT, font="F_BODY",
                  padding=(px(12), px(4)), borderwidth=1, relief="flat",
-                 bordercolor=BORDER_STRONG, lightcolor=SURFACE, darkcolor=SURFACE,
+                 bordercolor=BORDER_STRONG, lightcolor=BTN_BG, darkcolor=BTN_BG,
                  focuscolor=ACCENT_SOFT, anchor="center")
     st.map("TButton", background=neutral, foreground=[("disabled", TEXT_DISABLED)],
            bordercolor=[("disabled", BORDER), ("focus", ACCENT)],
